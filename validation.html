@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        
+        .label{
+            width:120px;
+            float:left;
+        }
+        form{
+            margin-left:40%;
+        }
+        
+        form div{
+            padding:2px;
+        }
+                
+    </style>
+    </head>
+    <body onload="display()">
+        <form>
+            <div>
+          <h1>Registration Form</h1>
+                <label for="first" class="label">FirstName</label>
+                <input type="text" name="first" id="first">
+            </div>
+            <div>
+                <label for="last" class="label">LastName</label>
+                <input type="text" name="last" id="last">
+            </div>
+            <div>
+                <label for="email" class="label">Email</label>
+                <input type="email" name="email" id="eml">
+            </div>
+            <div>
+                <label for="pass" class="label">Password</label>
+                <input type="password" name="pass" id="pass">
+            </div>
+            <div>
+                <label for="locate" class="label">Location</label>
+                <input type="text" name="locate" id="locate">
+            </div>
+            <div>
+                <label for="cname" class="label">Company</label>
+                <input type="text" name="company" id="cname">
+            </div>
+            <div>
+                <span>Gender</span>
+                <input type="radio" name="gender" id="gen1" value="male">
+                <label for="gen1">Male</label>
+                <input type="radio" name="gender" id="gen2" value="female">
+                <label for="gen2" class="gen" >Female</label>
+            </div>
+            
+            <div>
+            <button type="button" id="btn" onclick="validation()">Register</button>
+            </div>
+            <div id="cntr">
+            </div>
+        </form>
+        <script src="validation.js"></script>
+    </body>
+    </html>
